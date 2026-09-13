@@ -967,7 +967,7 @@ revolution/NdevExi2AD/DebuggerDriver.c:
 revolution/NdevExi2AD/exi2.c:
 	.text       start:0x800C7054 end:0x800C77E0
 
-revolution/KPAD/Kpad.c:
+revolution/KPAD/KPAD.c:
 	.text       start:0x800C77E0 end:0x800CA884
 
 revolution/PAD/Pad.c:
@@ -983,6 +983,15 @@ revolution/WPAD/WPAD.c:
 	.sdata      start:0x8043AD10 end:0x8043AD20
 	.sbss       start:0x8043BD58 end:0x8043BD88
 	.sdata2     start:0x8043E108 end:0x8043E110
+
+revolution/WPAD/WPADHIDParser.c:
+	.text       start:0x800D1FE4 end:0x800D6A98
+
+revolution/WPAD/WPADEncrypt.c:
+	.text       start:0x800D6A98 end:0x800D7B40
+
+revolution/WPAD/WPADMem.c:
+	.text       start:0x800D7B40 end:0x800D7D24
 
 revolution/WPAD/debug_msg.c:
 	.text       start:0x800D7D24 end:0x800D7D74
@@ -1012,22 +1021,40 @@ revolution/FS/fs.c:
 	.sdata      start:0x8043AD28 end:0x8043AD38
 	.sbss       start:0x8043BDD0 end:0x8043BDE4
 
+revolution/GX/GXInit.c:
+	.text       start:0x800DB448 end:0x800DC610
+
+revolution/GX/GXFifo.c:
+	.text       start:0x800DC610 end:0x800DD350
+
 revolution/GX/GXAttr.c:
 	.text       start:0x800DD350 end:0x800DE574
 	.data       start:0x80330C30 end:0x80330EA4
 	.sdata      start:0x8043AD40 end:0x8043AD4C
 
+revolution/GX/GXMisc.c:
+	.text       start:0x800DE574 end:0x800DEE24
+
 revolution/GX/GXGeometry.c:
 	.text       start:0x800DEE24 end:0x800DF3DC
+
+revolution/GX/GXFrameBuf.c:
+	.text       start:0x800DF3DC end:0x800DFEA8
 
 revolution/GX/GXLight.c:
 	.text       start:0x800DFEA8 end:0x800E05F8
 	.data       start:0x80330F98 end:0x80330FB4
 	.sdata2     start:0x8043E178 end:0x8043E1AC
 
+revolution/GX/GXTexture.c:
+	.text       start:0x800E05F8 end:0x800E1700
+
 revolution/GX/GXBump.c:
 	.text       start:0x800E1700 end:0x800E1B4C
 	.sdata2     start:0x8043E1E8 end:0x8043E1EC
+
+revolution/GX/GXTev.c:
+	.text       start:0x800E1B4C end:0x800E21CC
 
 revolution/GX/GXPixel.c:
 	.text       start:0x800E21CC end:0x800E2930
@@ -1046,6 +1073,9 @@ revolution/GX/GXDisplayList.c:
 revolution/GX/GXTransform.c:
 	.text       start:0x800E2ED0 end:0x800E34C4
 	.sdata2     start:0x8043E260 end:0x8043E274
+
+revolution/GX/GXPerf.c:
+	.text       start:0x800E34C4 end:0x800E3D00
 
 revolution/IPC/ipcMain.c:
 	.text       start:0x800E3D00 end:0x800E3D84
@@ -1083,6 +1113,10 @@ revolution/MEM/mem_allocator.c:
 
 revolution/MEM/mem_list.c:
 	.text       start:0x800E726C end:0x800E7380
+
+revolution/MTX/mtx.c:
+	.text       start:0x800E7380 end:0x800E7F98
+	.sdata2     start:0x8043E288 end:0x8043E2A8
 
 revolution/MTX/mtxvec.c:
 	.text       start:0x800E7F98 end:0x800E7FEC
@@ -1281,8 +1315,27 @@ revolution/SC/scapi_prdinfo.c:
 revolution/USB/usb.c:
 	.text       start:0x800F89AC end:0x800F9A4C
 	.data       start:0x8033F028 end:0x8033F648
-	.sdata      start:0x8043AF70 end:0x8043AF7C
+	.sdata      start:0x8043AF70 end:0x8043AF7A
 	.sbss       start:0x8043BFA8 end:0x8043BFB8
+
+revolution/VI/vi.c:
+	.text       start:0x800F9A4C end:0x800FC38C
+	.data       start:0x8033F648 end:0x8033FAC8
+	.bss        start:0x803BDB00 end:0x803BDC70
+	.sdata      start:0x8043AF80 end:0x8043AFA0
+	.sbss       start:0x8043BFB8 end:0x8043C068
+
+revolution/VI/i2c.c:
+	.text       start:0x800FC38C end:0x800FCDA8
+	.bss        start:0x803BDC70 end:0x803BDCA0
+	.sdata      start:0x8043AFA0 end:0x8043AFA8
+	.sbss       start:0x8043C068 end:0x8043C070
+
+revolution/VI/vi3in1.c:
+	.text       start:0x800FCDA8 end:0x800FE46C
+	.data       start:0x8033FAC8 end:0x80340058
+	.sdata      start:0x8043AFA8 end:0x8043AFC0
+	.sbss       start:0x8043C070 end:0x8043C088
 
 revolution/WUD/WUD.c:
 	.text       start:0x800FE46C end:0x801029E8
