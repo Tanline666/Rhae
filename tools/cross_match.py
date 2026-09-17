@@ -51,9 +51,11 @@ while i < len(current_syms.symbols):
             longest_match = current_match
             longest_match_address = current_match_address
     elif current_match != 0:
+        # You can do a faster search that is not paranoid about overlapping
+        # matches by instead subtracting `1` from `i`.
+        i -= current_match
         current_match = 0
         current_match_address = 0
-        i -= current_match + 1
 
     i += 1
 
