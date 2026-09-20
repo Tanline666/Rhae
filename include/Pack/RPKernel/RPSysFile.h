@@ -14,6 +14,10 @@
  */
 class RPSysFile : public EGG::Disposer {
 public:
+    //! Maximum file path length
+    static const u32 PATH_MAX = 128;
+
+public:
     /**
      * @brief Constructor
      *
@@ -46,7 +50,7 @@ public:
     /**
      * @brief Gets the data of this file
      */
-    const void* GetData() const {
+    const u8* GetData() const {
         return mpData;
     }
 
@@ -56,7 +60,7 @@ public:
 
 private:
     //! File path
-    char mPath[128]; // at 0x18
+    char mPath[PATH_MAX]; // at 0x18
     //! File data size
     s32 mSize; // at 0x98
     //! File data contents

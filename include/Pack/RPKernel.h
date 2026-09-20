@@ -6,9 +6,11 @@
 #include <Pack/RPKernel/IRPSysKokeshiCtrlDataCallback.h>
 #include <Pack/RPKernel/RPSysAppMiiManager.h>
 #include <Pack/RPKernel/RPSysAvatar.h>
+#include <Pack/RPKernel/RPSysController.h>
 #include <Pack/RPKernel/RPSysControllerSyncMgr.h>
 #include <Pack/RPKernel/RPSysFile.h>
 #include <Pack/RPKernel/RPSysFrameCtrl.h>
+#include <Pack/RPKernel/RPSysHomeMenuMgr.h>
 #include <Pack/RPKernel/RPSysHostIOSocketManager.h>
 #include <Pack/RPKernel/RPSysKokeshi.h>
 #include <Pack/RPKernel/RPSysKokeshiCtrlDataLoader.h>
@@ -36,6 +38,7 @@
 #include <Pack/RPKernel/RPSysOfficialDB.h>
 #include <Pack/RPKernel/RPSysParticleManager.h>
 #include <Pack/RPKernel/RPSysStringUtility.h>
+#include <Pack/RPKernel/RPSysSystemWinMgr.h>
 #include <Pack/RPKernel/RPSysTagProcessor.h>
 #include <Pack/RPKernel/RPSysTextWriter.h>
 #include <Pack/RPKernel/RPSysWideTextWriter.h>
