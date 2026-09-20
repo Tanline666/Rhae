@@ -1753,7 +1753,7 @@ Pack/RPKernel/RPSysSystem.cpp:
 	.text       start:0x801827F4 end:0x80183B1C
 	.ctors      start:0x802E9D4C end:0x802E9D50
 
-Pack/main.cpp:
+main.cpp:
 	.text       start:0x80183B1C end:0x80183BA0
 
 Pack/RPSystem/RPSysSceneCreator.cpp:

@@ -824,7 +824,7 @@ config.libs = [
         "cflags": cflags_rp,
         "progress_category": "kernel",  # str | List[str]
         "objects": [
-            Object(Matching, "Pack/main.cpp"),
+            Object(Matching, "main.cpp"),
             Object(NonMatching, "Pack/RPKernel/RPSysSystem.cpp"),
             Object(Matching, "Pack/RPKernel/IRPSysHostIOSocket.cpp"),
             Object(Matching, "Pack/RPKernel/RPSysHostIOSocketManager.cpp"),
