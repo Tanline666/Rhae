@@ -1749,5 +1749,28 @@ RVLFaceLib/RFL_Format.c:
 	extabindex  start:0x80007768 end:0x800077E0
 	.text       start:0x80176BE4 end:0x80177124
 
+Pack/RPKernel/RPSysSystem.cpp:
+	.text       start:0x801827F4 end:0x80183B1C
+	.ctors      start:0x802E9D4C end:0x802E9D50
+
 Pack/main.cpp:
 	.text       start:0x80183B1C end:0x80183BA0
+
+Pack/RPSystem/RPSysSceneCreator.cpp:
+	.text       start:0x80183BA0 end:0x80184878
+
+Pack/RPSystem/RPSysScene.cpp:
+	.text       start:0x80184878 end:0x80184F44
+	.ctors      start:0x802E9D50 end:0x802E9D54
+
+Pack/RPSystem/RPSysRenderMode.cpp:
+	.text       start:0x80184F44 end:0x80185000
+
+Pack/RPSystem/RPSysSceneMgr.cpp:
+	.text       start:0x80185000 end:0x80185AD4
+
+Pack/RPSystem/RPSysProjectLocal.cpp:
+	.text       start:0x80185AD4 end:0x80185CD0
+	.rodata     start:0x80317008 end:0x80317024
+	.data       start:0x8034F270 end:0x8034F2A0
+	.sbss       start:0x8043C470 end:0x8043C474

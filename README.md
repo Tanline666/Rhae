@@ -1,5 +1,4 @@
-Wii Play
-=============
+# Wii Play
 
 [![Build Status]][actions] [![Code Progress]][progress] [![Data Progress]][progress]
 
@@ -8,6 +7,7 @@ Wii Play
 [Code Progress]: https://decomp.dev/akiramusic000/Rhae.svg?mode=shield&measure=code&label=Code
 [Data Progress]: https://decomp.dev/akiramusic000/Rhae.svg?mode=shield&measure=data&label=Data
 [progress]: https://decomp.dev/akiramusic000/Rhae
+
 [<img src="https://decomp.dev/akiramusic000/Rhae.svg?w=512&h=256" width="512" height="256" alt="A visual">][Progress]
 
 A work-in-progress decompilation of Wii Play.
@@ -16,13 +16,11 @@ This repository does **not** contain any game assets or assembly whatsoever. An 
 
 Supported versions:
 
-- `RHAE01`: Rev 1 (USA)
+- `RHAE01_01`: Rev 1 (USA)
 
-Dependencies
-============
+# Dependencies
 
-Windows
---------
+## Windows
 
 On Windows, it's **highly recommended** to use native tooling. WSL or msys2 are **not** required.  
 When running under WSL, [objdiff](#diffing) is unable to get filesystem notifications for automatic rebuilds.
@@ -32,8 +30,7 @@ When running under WSL, [objdiff](#diffing) is unable to get filesystem notifica
 - Download [ninja](https://github.com/ninja-build/ninja/releases) and add it to `%PATH%`.
   - Quick install via pip: `pip install ninja`
 
-macOS
-------
+## macOS
 
 - Install [ninja](https://github.com/ninja-build/ninja/wiki/Pre-built-Ninja-packages):
 
@@ -43,15 +40,13 @@ macOS
 
 [wibo](https://github.com/decompals/wibo), a minimal 32-bit Windows binary wrapper, will be automatically downloaded and used.
 
-Linux
-------
+## Linux
 
 - Install [ninja](https://github.com/ninja-build/ninja/wiki/Pre-built-Ninja-packages).
 
 [wibo](https://github.com/decompals/wibo), a minimal 32-bit Windows binary wrapper, will be automatically downloaded and used.
 
-Building
-========
+# Building
 
 - Clone the repository:
 
@@ -59,7 +54,7 @@ Building
   git clone https://github.com/my/repo.git
   ```
 
-- Copy your game's disc image to `orig/RHAE01`.
+- Copy your game's disc image to `orig/RHAE01_01`.
   - Supported formats: ISO (GCM), RVZ, WIA, WBFS, CISO, NFS, GCZ, TGC
   - After the initial build, the disc image can be deleted to save space.
 
@@ -75,8 +70,7 @@ Building
   ninja
   ```
 
-Diffing
-=======
+# Diffing
 
 Once the initial build succeeds, an `objdiff.json` should exist in the project root.
 
